@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="users">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView prefHeight="372.0" prefWidth="600.0" fx:id="tableVusers">
+                          <columns>
+                            <TableColumn prefWidth="141.0" text="firstName" fx:id="usersFirstname"/>
+                            <TableColumn prefWidth="116.0" text="lastName" fx:id="usersLastName"/>
+                              <TableColumn prefWidth="228.0" text="email" fx:id="usersEmail"/>
+                              <TableColumn prefWidth="113.0" text="login" fx:id="usersLogin"/>
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="teachers">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" >
+                     <children>
+                        <TableView layoutX="6.0" layoutY="7.0" prefHeight="364.0" prefWidth="594.0" fx:id="tableVTeachers">
+                          <columns>
+                            <TableColumn prefWidth="213.0" text="name" fx:id="teachersName"/>
+                            <TableColumn prefWidth="245.0" text="addr" fx:id="teachersAddr"/>
+                              <TableColumn prefWidth="135.0" text="phone" fx:id="teachersPhone"/>
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="courses">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView prefHeight="372.0" prefWidth="600.0" fx:id="tableVCourses">
+                          <columns>
+                            <TableColumn prefWidth="221.0" text="title" fx:id="coursesTitle"/>
+                            <TableColumn prefWidth="53.0" text="length" fx:id="coursesLength"/>
+                              <TableColumn prefWidth="325.0" text="description" fx:id="coursesDescription"/>
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="lessons">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView prefHeight="372.0" prefWidth="600.0" fx:id="tableVLessons">
+                          <columns>
+                            <TableColumn prefWidth="133.0" text="teacher" fx:id="lessonsTeacher"/>
+                            <TableColumn prefWidth="118.0" text="course" fx:id="lessonsCourses" />
+                              <TableColumn prefWidth="115.0" text="room" fx:id="lessonsRoom"/>
+                              <TableColumn prefWidth="233.0" text="lesson_date" fx:id="lessonsLesson_date"/>
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>
